@@ -1,0 +1,22 @@
+.box{
+    display: flex;  
+    background-color: white;
+    flex-wrap: wrap;
+}
+.karte{
+width: 30%;
+display: block;
+}
+
+.Preis{
+      color: green;
+      height: 50px;
+      font-size: 25px;
+      float: left;
+}
+.bild{
+    height: 590px;
+    object-fit: cover;
+}
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+

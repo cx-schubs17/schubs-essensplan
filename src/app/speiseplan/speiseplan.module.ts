@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { SpeiseplanPage } from './speiseplan.page';
+import { ComponentsModule} from '../components/components.module';
+import{ MatFormFieldModule, MatNativeDateModule, MatInputModule} from '@angular/material';
+import{MatDatepickerModule} from '@angular/material/datepicker';
 
 const routes: Routes = [
   {
@@ -11,13 +14,17 @@ const routes: Routes = [
     component: SpeiseplanPage
   }
 ];
-
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    MatInputModule,
+    MatFormFieldModule,
+    MatDatepickerModule,
+    ComponentsModule,
   ],
   declarations: [SpeiseplanPage]
 })
